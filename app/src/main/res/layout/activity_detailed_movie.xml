@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.android.movieapp.detailedMovieActivity">
+
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AAAAAAAAAAA"/>
+
+    <ImageView
+        android:id="@+id/movieImgId"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        />
+
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AAAAAAAAAAA"
+        />
+
+    <TextView
+        android:id="@+id/vote_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AAAAAAAAAAA"/>
+
+    <TextView
+        android:id="@+id/relaese_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AAAAAAAAAAA"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/aa"
+    android:text="Youtube"/>
+
+</LinearLayout>
