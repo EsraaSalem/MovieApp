@@ -5,18 +5,42 @@ package com.example.android.movieapp;
  */
 public class Movie {
 
+    public Movie(String original_title, String poster_path,
+                 String overview, int vote_count, double vote_average, String release_date, String key) {
+        this.original_title = original_title;
+        this.poster_path = poster_path;
+        this.overview = overview;
+        this.vote_count = vote_count;
+        this.vote_average = vote_average;
+        this.release_date = release_date;
+        this.key = key;
+    }
 
+    public Movie() {
+    }
 
     String original_title;
     String poster_path;
     String overview;
-    int vote_count;
-    String release_date;
 
+    int vote_count;
+    double vote_average;
+    String release_date;
     String key;
+
+
 
     public String getKey() {
         return key;
+    }
+
+
+    public double getVote_average() {
+        return vote_average;
+    }
+
+    public void setVote_average(double vote_average) {
+        this.vote_average = vote_average;
     }
 
     public void setKey(String key) {
@@ -30,11 +54,11 @@ public class Movie {
                 ", poster_path='" + poster_path + '\'' +
                 ", overview='" + overview + '\'' +
                 ", vote_count=" + vote_count +
+                ", vote_average=" + vote_average +
                 ", release_date='" + release_date + '\'' +
+                ", key='" + key + '\'' +
                 '}';
     }
-
-
 
     public String getOriginal_title() {
         return original_title;

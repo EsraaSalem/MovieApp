@@ -25,12 +25,12 @@ public class MovieParser {
                 JSONObject oneMovie = jsonArray.getJSONObject(i);
                 Movie movie = new Movie();
                 movie.setOriginal_title(oneMovie.getString("original_title").toString());
-                movie.setOverview(oneMovie.getString("overview").toString());
+                movie.setOverview(oneMovie.getString("overview"));
                 movie.setPoster_path(oneMovie.getString("poster_path").toString());
                 movie.setRelease_date(oneMovie.getString("release_date"));
                 movie.setVote_count(oneMovie.getInt("vote_count"));
-              //  movie.setKey(oneMovie.getString("key"));
-
+                movie.setKey(oneMovie.getString("id"));
+                movie.setVote_average(oneMovie.getDouble("vote_average"));
                 allMovies.add(movie);
             }
 

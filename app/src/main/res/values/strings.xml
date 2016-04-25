@@ -41,6 +41,7 @@
     <string name="title_activity_detailed_movie">detailedMovieActivity</string>
     <string name="title_activity_main_activity_movie_app">MainActivityMovieApp</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_detailed">DetailedActivity</string>
 
 
     <string name="action_settings">Settings</string>

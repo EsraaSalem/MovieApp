@@ -10,6 +10,7 @@ public class FetchMoviesTask extends AsyncTask<String, Void, String> {
 
 
     protected void onPostExecute(String result) {
+
     }
 
     @Override
