@@ -12,7 +12,7 @@ import java.util.Vector;
  */
 public class TrailersFetch {
 
-    public static String movieApiKey = "d9c1db839e8826febb843941033c59cc";
+    public static String movieApiKey = "";
 
     public String callMoviesTrailers(String movieKey) throws IOException {
 

@@ -83,10 +83,6 @@ public class MovieFavouritesDB extends SQLiteOpenHelper {
         }
 
 
-//
-//        Cursor res =  db.rawQuery( "select * from movie", null );
-//        res.moveToFirst();
-
 
         return false;
     }
@@ -111,7 +107,6 @@ public class MovieFavouritesDB extends SQLiteOpenHelper {
     {
         Vector<Movie> array_list = new Vector<Movie>();
 
-        //hp = new HashMap();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res =  db.rawQuery( "select * from movie", null );
         res.moveToFirst();

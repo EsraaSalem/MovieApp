@@ -14,7 +14,7 @@ import java.net.URL;
 public class MovieAPICalling {
 
 
-    public static String movieApiKey = "d9c1db839e8826febb843941033c59cc";
+    public static String movieApiKey = "";
 
     public MovieAPICalling() {
 
@@ -35,9 +35,7 @@ public class MovieAPICalling {
 
                 urlStr = "https://api.themoviedb.org/3/movie/popular?api_key=" + movieApiKey;
             }
-
-           // urlStr = "https://api.themoviedb.org/3/movie/top_rated?api_key=" + movieApiKey;
-            URL url = new URL(urlStr);
+        URL url = new URL(urlStr);
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod("GET");
             urlConnection.connect();

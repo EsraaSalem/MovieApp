@@ -60,19 +60,6 @@ public class TrailersListView extends BaseAdapter {
         View reviewHeaderView = inflater.inflate(R.layout.review_separator,null);
 
 
-//        if(position == 0)
-//        {
-//            TextView trailerHeader = (TextView)trailerHeaderView.findViewById(R.id.trailerHeader);
-//            trailerHeader.setText("Trailers");
-//            return trailerHeaderView;
-//        }
-//        if( position == reviewStartPos)
-//
-//        {
-//            TextView reviewHeader = (TextView)trailerHeaderView.findViewById(R.id.reviewHeader);
-//            reviewHeader.setText("Reviews");
-//            return reviewHeaderView;
-//        }
         String type_ = trailersAndReview.get(position).getType();
         Log.d(TAG, "TYPE = "+type_+"  size : "+trailersAndReview.size());
 
